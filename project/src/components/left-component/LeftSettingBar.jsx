@@ -1,18 +1,36 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import '../css/commuMarket.css'
+
 export default function LeftSettingBar() {
+    const [selected, setselected] = useState("profile-setting")
+
+    const changeSelect = (menu) => {
+        setselected(menu)
+    }
+
     return (
         <>
             <aside className="left-box">
                 <div className="link-box">
-                    <div className="box">
-                        <img src="" alt="profile-image" className="profile-img" />
-                        <div className="column-box">
-                            <p>닉네임</p>
-                            <a href="#">프로필 수정하기</a>
-                        </div>
-                    </div> 
-                    <Link to="/buy-history">구매내역</Link>
-                    <Link to="/management">관리</Link>
+                    <Link to="/setting/profile-setting"
+                        className={`profile-setting-link ${selected === "profile-setting" ? "left-select" : ""}`}
+                        onClick={() => changeSelect("profile-setting")}
+                    >프로필 설정</Link>
+                    <Link to="/setting/preferences"
+                        className={`preferences-link ${selected === "preferences" ? "left-select" : ""}`}
+                        onClick={() => changeSelect("preferences")}
+                    >환경 설정</Link>
+                    <Link to="/setting/buy-history"
+                        className={`buy-history-link ${selected === "buy-history" ? "left-select" : ""}`}
+                        onClick={() => changeSelect("buy-history")}
+                    >구매내역</Link>
+                    <Link to="/setting/management"
+                        className={`management-link ${selected === "management" ? "left-select" : ""}`}
+                        onClick={() => changeSelect("management")}
+                    >관리</Link>
                 </div>
+                <Link to="/">돌아가기</Link>
             </aside>
         </>
     )

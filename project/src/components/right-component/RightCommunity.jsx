@@ -1,3 +1,5 @@
+import '../css/commuMarket.css'
+
 export default function RightCommunity() {
     return (
         <>

@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 export default function Header() {
     return (
         <>
@@ -8,9 +11,9 @@ export default function Header() {
                     <input type="text" name="search" className="search" placeholder="검색"></input>
                 </div>
                 <div className="sign-box">
-                    <a href="#">로그인</a>
+                    <Link to="/sign/in">로그인</Link>
                     <p>|</p>
-                    <a href="#">회원가입</a>
+                    <Link to="/sign/up">회원가입</Link>
                 </div>
             </header>
         </>
