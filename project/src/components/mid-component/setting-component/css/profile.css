@@ -40,8 +40,14 @@ img {
     }
 
     .change-profile {
+<<<<<<< HEAD
         padding: 5px;
         background-color: #0077b6;
+=======
+        cursor: pointer;
+        padding: 5px;
+        background-color: #F89448;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
         border: 0;
         color: white;
         font-weight: 500;
@@ -60,9 +66,16 @@ img {
         }
 
         &>button {
+<<<<<<< HEAD
             margin: 50px 30px;
             padding: 10px 20px;
             background-color: #0077b6;
+=======
+            cursor: pointer;
+            margin: 50px 30px;
+            padding: 10px 20px;
+            background-color: #F89448;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
             border: 0;
             color: white;
             font-weight: 500;
@@ -87,7 +100,20 @@ img {
 
         & input {
             width: 300px;
+<<<<<<< HEAD
             padding: 5px;
+=======
+            padding: 7.5px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            outline: unset;
+            transition: .3s;
+
+            &:focus {
+                outline: unset;
+                border: 1px solid #ff6f00;
+            }
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
         }
     }
 }

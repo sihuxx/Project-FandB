@@ -11,24 +11,52 @@ img {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 .sign-in-box {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+=======
+.all-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.sign-in-box {
+    padding: 145px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 3px 3px 3px #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
 
     & .com-box {
         display: flex;
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
         gap: 15px;
+=======
+        gap: 30px;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
 
 
         & button {
             width: 200px;
             border: 0;
+<<<<<<< HEAD
             background-color: #0077b6;
+=======
+            background-color: #F89448;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
             color: white;
             border-radius: 10px;
             padding: 10px;
@@ -44,23 +72,44 @@ img {
         gap: 5px;
 
         & label {
+<<<<<<< HEAD
             color: #212529;
+=======
+            color: #333;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
             font-size: 17px;
         }
 
         & input {
             font-size: 17px;
             width: 300px;
+<<<<<<< HEAD
             padding: 5px;
             border: 0;
             border-bottom: 1px solid #0077b6;
+=======
+            padding: 7.5px;
+            border: 0;
+            border-bottom: 1px solid #F89448;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
             outline: unset;
             transition: .3s;
 
             &:focus {
+<<<<<<< HEAD
                 border-bottom: 1px solid #004b74;
+=======
+                border-bottom: 1px solid #ff6f00;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
             }
         }
     }
 
+<<<<<<< HEAD
+=======
+}
+.sign-up-link {
+    margin-top: 15px;
+    color: #a7a7a7;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
 }

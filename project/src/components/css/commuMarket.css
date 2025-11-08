@@ -79,11 +79,19 @@ header {
 
         & a {
             font-size: 18.5px;
+<<<<<<< HEAD
             color: #e0fbfc;
         }
 
         & p {
             color: #caf0f8;
+=======
+            color: #F89448;
+        }
+
+        & p {
+            color: #dfdfdf;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
         }
     }
 }
@@ -245,7 +253,11 @@ main {
             }
 
             & p {
+<<<<<<< HEAD
                 color: #333;
+=======
+                color: #fff;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
                 font-size: 18px;
             }
 
@@ -260,11 +272,19 @@ main {
                     margin-top: 15px;
                     border-radius: 15px;
                     background-color: #F89448;
+<<<<<<< HEAD
+=======
+                    color: #fff;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
                     font-weight: 500;
                     white-space: nowrap;
 
                     &.like-it {
+<<<<<<< HEAD
                         background-color: #0077b6;
+=======
+                        background-color: #ff6f00;
+>>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
                         color: #ffffff;
                     }
                 }
