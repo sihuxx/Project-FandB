@@ -108,6 +108,7 @@ img {
 .sign-in-link {
     margin-top: 15px;
     color: #a7a7a7;
+    text-decoration: underline;
 }
 
 .next-btn {

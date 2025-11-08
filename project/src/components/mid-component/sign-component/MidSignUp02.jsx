@@ -69,7 +69,6 @@ export default function MidSignUp02() {
                             required
                             value={formData.confirmPassword}
                             onChange={handleChange}
-                            onChange={handleChange}
                         />
                     </div>
 

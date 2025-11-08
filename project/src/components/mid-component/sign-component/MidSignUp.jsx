@@ -91,7 +91,7 @@ export default function MidSignUp() {
                     </div>
 
                     <button type="submit" className='next-btn'>다음으로</button>
-                    <Link to="/sign/in" className='sign-in-link'>로그인 하러가기</Link>
+                    <Link to="/sign/in" className='sign-in-link'>로그인</Link>
                 </form>
             </div>
         </div>

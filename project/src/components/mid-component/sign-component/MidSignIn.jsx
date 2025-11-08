@@ -33,7 +33,7 @@ export default function MidSignIn() {
                         <input type="password" placeholder='비밀번호를 입력해주세요.' />
                     </div>
                     <button>로그인</button>
-                <Link to="/sign/up" className='sign-up-link'>회원가입 하러가기</Link>
+                <Link to="/sign/up" className='sign-up-link'>회원가입</Link>
                 </div>
             </div>  
         </div>

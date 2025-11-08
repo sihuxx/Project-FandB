@@ -1,19 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { BrowserRouter, Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 >>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
+=======
+// App.jsx
+import { BrowserRouter, Routes, Route, Navigate, Outlet, Link, useLocation } from "react-router-dom";
+import Header from './components/Header';
+>>>>>>> a4a4247 (프론트/백 연결, 회원가입/로그인  페이지 구현, 인기순/최신순 구현, 전체 리액트 연결 구현)
 import LeftBar from './components/left-component/LeftBar';
 import LeftSettingBar from './components/left-component/LeftSettingBar';
-import MidCommunity from './components/mid-component/MidCommunity';
-import MidTopCommunity from './components/mid-component/MidTopCommunity';
 import RightCommunity from './components/right-component/RightCommunity';
-import MidMarket from './components/mid-component/MidMarket';
-import MidTopMarket from './components/mid-component/MidTopMarket';
-import Header from './components/Header';
 import Setting from './Setting';
 import Sign from './sign';
+<<<<<<< HEAD
 <<<<<<< HEAD
 import { BrowserRouter, Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import '../fontawesome/css/font-awesome.css'
@@ -119,10 +121,28 @@ function Layout() {
         <Route path='/sign/*' element={<Sign />} />
 >>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
       </Routes>
+=======
+import MidDM from "./components/mid-component/MidDM";
+import MidTopCommunity from './components/mid-component/MidTopCommunity';
+import CommunityPop from "./components/mid-component/mid-bottom-component/CommunityPop";
+import CommunityNew from "./components/mid-component/mid-bottom-component/CommunityNew";
+import MidTopMarket from './components/mid-component/MidTopMarket';
+import MarketPop from "./components/mid-component/mid-bottom-component/MarketPop";
+import MarketNew from "./components/mid-component/mid-bottom-component/MarketNew";
+
+import '../fontawesome/css/font-awesome.css';
+
+function CommunityLayout() {
+  return (
+    <div className="com-container">
+      <MidTopCommunity />
+      <Outlet />
+>>>>>>> a4a4247 (프론트/백 연결, 회원가입/로그인  페이지 구현, 인기순/최신순 구현, 전체 리액트 연결 구현)
     </div>
   );
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -160,3 +180,71 @@ export default function App() {
   );
 }
 >>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
+=======
+function MarketLayout() {
+  return (
+    <div className="com-container">
+      <MidTopMarket />
+      <Outlet />
+    </div>
+  );
+}
+
+function Layout() {
+  const location = useLocation();
+  const isSettingPage = location.pathname.startsWith('/setting');
+  const isSignPage = location.pathname.startsWith('/sign')
+
+  return (
+    <div className='box'>
+      {!isSignPage && (
+        isSettingPage ? <LeftSettingBar /> : <LeftBar />
+      )}
+
+      <Routes>
+        <Route path='/' element={<Navigate to="/community/popular" />} />
+
+        <Route path='/community' element={<CommunityLayout />}>
+          <Route index element={<Navigate to="popular" />} />
+          <Route path='popular' element={<CommunityPop />} />
+          <Route path='new' element={<CommunityNew />} />
+        </Route>
+
+        <Route path='/market' element={<MarketLayout />}>
+          <Route index element={<Navigate to="popular" />} />
+          <Route path='popular' element={<MarketPop />} />
+          <Route path='new' element={<MarketNew />} />
+        </Route>
+
+        <Route path='/directMessage' element={<MidDM/>}/>
+        <Route path='/setting/*' element={<Setting />} />
+        <Route path='/sign/*' element={<Sign />} />
+      </Routes>
+
+      {!isSettingPage && !isSignPage && <RightCommunity />}
+    </div>
+  );
+}
+
+function AppContent() {
+  const location = useLocation();
+  const isSignPage = location.pathname.startsWith('/sign');
+
+  return (
+    <>
+      {/* sign 페이지가 아니면 헤더 표시 */}
+      {!isSignPage && <Header />}
+      <Layout />
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
+  );
+}
+
+>>>>>>> a4a4247 (프론트/백 연결, 회원가입/로그인  페이지 구현, 인기순/최신순 구현, 전체 리액트 연결 구현)
