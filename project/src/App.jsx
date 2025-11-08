@@ -8,8 +8,7 @@ import MidTopMarket from './components/mid-component/MidTopMarket';
 import Header from './components/Header';
 import Setting from './Setting';
 import Sign from './sign';
-import './default.css'
-import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import '../fontawesome/css/font-awesome.css'
 
 function Community() {
@@ -46,8 +45,9 @@ function Layout() {
     <div className='box'>
       {isSettingPage ? <LeftSettingBar /> : <LeftBar />}
       <Routes>
-        <Route path='/' element={<Community />}></Route>
-        <Route path='/market' element={<Market />}></Route>
+        <Route path='/' element={<Navigate to="/community"/>}></Route>
+        <Route path='/community' element={<Community />}></Route>
+        <Route path='/market/*' element={<Market />}></Route>
         <Route path='/directMessage'></Route>
         <Route path='/setting/*' element={<Setting />}></Route>
         <Route path='/sign/*' element={<Sign/>}></Route>

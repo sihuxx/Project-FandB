@@ -11,7 +11,7 @@ img {
     object-fit: cover;
 }
 
-.all-box {
+.preferences-box {
     display: flex;
     flex-direction: column;
     gap: 75px;

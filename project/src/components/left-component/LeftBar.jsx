@@ -3,7 +3,7 @@ import { useState } from "react";
 import '../css/commuMarket.css'
 
 export default function LeftBar() {
-    const [selected, setselected] = useState("comunity")
+    const [selected, setselected] = useState("community")
 
     const changeSelect = (menu) => {
         setselected(menu)
@@ -13,7 +13,7 @@ export default function LeftBar() {
         <>
             <aside className="left-box">
                 <div className="link-box">
-                    <Link to="/"
+                    <Link to="/community"
                         className={`community-link ${selected === "community" ? "left-select" : ""}`}
                         onClick={() => changeSelect("community")}
                     >커뮤니티</Link>

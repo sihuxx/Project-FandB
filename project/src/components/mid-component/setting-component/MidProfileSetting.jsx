@@ -3,7 +3,7 @@ import './css/profile.css'
 export default function MidProfileSetting() {
     return (
         <>
-            <div className="all-box">
+            <div className="profile-box">
                 <h3>나의 프로필</h3>
                 <div className="box">
                     <p>로고</p>

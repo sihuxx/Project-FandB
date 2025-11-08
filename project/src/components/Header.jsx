@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <a href="#" className="logo-box"><img src="" alt="logo"></img></a>
+                <Link className="link-box" to="/community"><img src="" alt="logo"></img></Link>
                 <div className="search-box">
                     <i className="fa fa-2x fa-search"></i>
                     <input type="text" name="search" className="search" placeholder="검색"></input>

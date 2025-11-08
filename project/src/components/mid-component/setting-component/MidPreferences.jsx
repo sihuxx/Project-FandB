@@ -3,7 +3,7 @@ import './css/preferences.css'
 export default function MidPreferences() {
     return (
         <>
-            <div className="all-box">
+            <div className="preferences-box">
                 <h3>환경 설정</h3>
                 <div className="pre-column-box">
                     <div className="pre-box">

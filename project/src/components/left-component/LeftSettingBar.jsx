@@ -30,7 +30,7 @@ export default function LeftSettingBar() {
                         onClick={() => changeSelect("management")}
                     >관리</Link>
                 </div>
-                <Link to="/">돌아가기</Link>
+                <Link to="/community">돌아가기</Link>
             </aside>
         </>
     )
