@@ -33,67 +33,59 @@ header {
     padding: 0 40px;
     position: relative;
     z-index: 1000;
+}
 
-    & .logo-box>img {
-        width: 130px;
-    }
+header .logo-box > img {
+    width: 130px;
+}
 
-    & .search-box {
-        width: 900px;
-        height: 45px;
-        position: relative;
+header .search-box {
+    width: 900px;
+    height: 45px;
+    position: relative;
+}
 
-        & input {
-            width: 900px;
-            height: 45px;
-            border-radius: 20px;
-            border: 1px solid #dfdfdf;
-            outline: unset;
-            padding: 20px;
-            font-size: 18px;
-            color: #0a192f;
-            background-color: #ffffff;
+header .search-box input {
+    width: 900px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid #dfdfdf;
+    outline: unset;
+    padding: 20px;
+    font-size: 18px;
+    color: #0a192f;
+    background-color: #ffffff;
+}
 
-            &:focus {
-                outline: 1px solid #F89448;
-            }
+header .search-box input:focus {
+    outline: 1px solid #F89448;
+}
 
-            &::placeholder {
-                color: #F89448;
-            }
-        }
+header .search-box input::placeholder {
+    color: #F89448;
+}
 
-        & i {
-            position: absolute;
-            font-size: 20px;
-            top: 12px;
-            right: 20px;
-            color: #F89448;
-        }
-    }
+header .search-box i {
+    position: absolute;
+    font-size: 20px;
+    top: 12px;
+    right: 20px;
+    color: #F89448;
+}
 
-    & .sign-box {
-        align-items: center;
-        gap: 20px;
-        font-weight: 500;
+header .sign-box {
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+}
 
-        & a {
-            font-size: 18.5px;
-<<<<<<< HEAD
-            color: #e0fbfc;
-        }
+header .sign-box a {
+    font-size: 18.5px;
+    color: #F89448;
+}
 
-        & p {
-            color: #caf0f8;
-=======
-            color: #F89448;
-        }
-
-        & p {
-            color: #dfdfdf;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-        }
-    }
+header .sign-box p {
+    color: #dfdfdf;
 }
 
 [class*="box"] {
@@ -118,29 +110,29 @@ main {
     justify-content: space-between;
     gap: 20px;
     font-size: 20px;
+}
 
-    & .link-box {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+.left-box .link-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-    & a {
-        width: 200px;
-        height: 60px;
-        border-radius: 15px;
-        display: flex;
-        padding: 20px;
-        justify-content: start;
-        align-items: center;
-        color: #333;
+.left-box a {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+    color: #333;
+}
 
-        &.left-select {
-            font-weight: bold;
-            background-color: #f3f3f3;
-            color: #F89448;
-        }
-    }
+.left-box a.left-select {
+    font-weight: bold;
+    background-color: #f3f3f3;
+    color: #F89448;
 }
 
 .mid-top {
@@ -155,23 +147,23 @@ main {
     position: sticky;
     top: 0;
     white-space: nowrap;
+}
 
-    & a {
-        width: 300px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        padding: 30px;
-        color: #333;
+.mid-top a {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 30px;
+    color: #333;
+}
 
-        &.mid-select {
-            color: #03045e;
-            font-weight: bold;
-            border-bottom: 4px solid #F89448;
-        }
-    }
+.mid-top a.mid-select {
+    color: #03045e;
+    font-weight: bold;
+    border-bottom: 4px solid #F89448;
 }
 
 .mid-box {
@@ -184,113 +176,102 @@ main {
     align-items: center;
     overflow-y: scroll;
     scrollbar-width: none;
+}
 
-    & .post-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+.mid-box .post-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-    & .post {
-        width: 100%;
-        border-bottom: 1px solid #dfdfdf;
-        background-color: #ffffff;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+.mid-box .post {
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 
-        & .post-info-box {
-            gap: 15px;
-        }
+.mid-box .post .post-info-box {
+    gap: 15px;
+}
 
-        & .profile-box>img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-        }
+.mid-box .post .profile-box > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
 
-        & .post-bottom {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+.mid-box .post .post-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-            & .box {
-                align-items: center;
-                gap: 15px;
+.mid-box .post .post-bottom .box {
+    align-items: center;
+    gap: 15px;
+}
 
-                & h3 {
-                    color: #333;
-                }
+.mid-box .post .post-bottom .box h3 {
+    color: #333;
+}
 
-                & p {
-                    color: #5c6b73;
-                }
-            }
+.mid-box .post .post-bottom .box p {
+    color: #5c6b73;
+}
 
-            &>p {
-                font-size: 20px;
-                color: #333;
-            }
+.mid-box .post .post-bottom > p {
+    font-size: 20px;
+    color: #333;
+}
 
-            & .post-picture {
-                width: 700px;
-                height: 400px;
-                border-radius: 15px;
-            }
-        }
+.mid-box .post .post-bottom .post-picture {
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+}
 
-        & .reaction-box {
-            align-items: center;
-            justify-content: space-between;
-            font-size: 15px;
+.mid-box .post .reaction-box {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
 
-            & i {
-                color: #333;
-                font-size: 18px;
-            }
+.mid-box .post .reaction-box i {
+    color: #333;
+    font-size: 18px;
+}
 
-            & p {
-<<<<<<< HEAD
-                color: #333;
-=======
-                color: #fff;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-                font-size: 18px;
-            }
+.mid-box .post .reaction-box p {
+    color: #fff;
+    font-size: 18px;
+}
 
-            & .box-con {
-                gap: 15px;
+.mid-box .post .reaction-box .box-con {
+    gap: 15px;
+}
 
-                &>a {
-                    display: flex;
-                    align-items: center;
-                    gap: 7.5px;
-                    padding: 10px 12.5px;
-                    margin-top: 15px;
-                    border-radius: 15px;
-                    background-color: #F89448;
-<<<<<<< HEAD
-=======
-                    color: #fff;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-                    font-weight: 500;
-                    white-space: nowrap;
+.mid-box .post .reaction-box .box-con > a {
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    padding: 10px 12.5px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: #F89448;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+}
 
-                    &.like-it {
-<<<<<<< HEAD
-                        background-color: #0077b6;
-=======
-                        background-color: #ff6f00;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-                        color: #ffffff;
-                    }
-                }
-            }
-        }
-    }
+.mid-box .post .reaction-box .box-con > a.like-it {
+    background-color: #ff6f00;
+    color: #ffffff;
 }
 
 .post-btn {
@@ -307,10 +288,10 @@ main {
     z-index: 100;
     transition: .3s;
     cursor: pointer;
+}
 
-    & i {
-        color: #ffffff;
-    }
+.post-btn i {
+    color: #ffffff;
 }
 
 .right-box {
@@ -321,102 +302,102 @@ main {
     overflow-y: scroll;
     scrollbar-width: none;
     border-left: 1px solid #dfdfdf;
+}
 
-    & .right-top {
-        width: 100%;
-        height: 70px;
-        display: flex;
-        padding: 15px;
-        align-items: center;
-        background-color: #ffffff;
-        color: #03045e;
-        font-weight: bold;
-        position: sticky;
-        top: 0;
+.right-box .right-top {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background-color: #ffffff;
+    color: #03045e;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
 
-        &>p {
-            font-size: 20px;
-        }
-    }
+.right-box .right-top > p {
+    font-size: 20px;
+}
 
-    & .community-box {
-        display: flex;
-        flex-direction: column;
+.right-box .community-box {
+    display: flex;
+    flex-direction: column;
+}
 
-        & .community {
-            display: flex;
-            align-items: center;
-            height: 130px;
-            gap: 15px;
-            padding: 15px;
+.right-box .community-box .community {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    gap: 15px;
+    padding: 15px;
+}
 
-            & img {
-                width: 70px;
-                height: 70px;
-                border-radius: 10px;
-            }
+.right-box .community-box .community img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
 
-            & h3 {
-                font-size: 18px;
-                color: #333;
-            }
+.right-box .community-box .community h3 {
+    font-size: 18px;
+    color: #333;
+}
 
-            & .com-box {
-                flex-direction: column;
-                justify-content: center;
-                gap: 7.5px;
+.right-box .community-box .community .com-box {
+    flex-direction: column;
+    justify-content: center;
+    gap: 7.5px;
+}
 
-                &>.box {
-                    align-items: center;
-                    gap: 7.5px;
-                }
+.right-box .community-box .community .com-box > .box {
+    align-items: center;
+    gap: 7.5px;
+}
 
-                & p {
-                    color: #5a5a5a;
-                    font-size: 15px;
-                }
-            }
-        }
-    }
+.right-box .community-box .community .com-box p {
+    color: #5a5a5a;
+    font-size: 15px;
 }
 
 /* 중고마켓 */
 .pro-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-    & .pro {
-        display: flex;
-        flex-direction: column;
-        gap: 7.5px;
-        padding: 30px;
-        border-radius: 15px;
-        background-color: #ffffff;
+.pro-box .pro {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
 
-        & img {
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-        }
+.pro-box .pro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
 
-        & p {
-            font-size: 18px;
-            color: #000000;
-        }
+.pro-box .pro p {
+    font-size: 18px;
+    color: #000000;
+}
 
-        & h3 {
-            font-size: 20px;
-            color: #000000;
-        }
+.pro-box .pro h3 {
+    font-size: 20px;
+    color: #000000;
+}
 
-        & .box {
-            display: flex;
-            gap: 5px;
+.pro-box .pro .box {
+    display: flex;
+    gap: 5px;
+}
 
-            & p {
-                color: #5a5a5a;
-                font-size: 15px;
-            }
-        }
-    }
+.pro-box .pro .box p {
+    color: #5a5a5a;
+    font-size: 15px;
 }

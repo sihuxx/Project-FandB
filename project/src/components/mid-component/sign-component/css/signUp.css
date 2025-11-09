@@ -11,14 +11,6 @@ img {
     object-fit: cover;
 }
 
-<<<<<<< HEAD
-.sign-up-box {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-=======
 .all-container {
     width: 100vw;
     height: 100vh;
@@ -36,73 +28,50 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
+}
 
-    & .com-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-<<<<<<< HEAD
+.sign-up-box .com-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 
+.sign-up-box .com-box button {
+    width: 200px;
+    border: 0;
+    background-color: #F89448;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
 
-        & button {
-            width: 200px;
-            border: 0;
-            background-color: #0077b6;
-            color: white;
-            border-radius: 10px;
-            padding: 10px;
-            margin-top: 30px;
-            font-size: 17px;
-            font-weight: 500;
-        }
-=======
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-    }
+.sign-up-box .box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
-    & .box {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+.sign-up-box .box label {
+    color: #333;
+    font-size: 17px;
+}
 
-        & label {
-<<<<<<< HEAD
-            color: #212529;
-=======
-            color: #333;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-            font-size: 17px;
-        }
+.sign-up-box .box input {
+    font-size: 17px;
+    width: 300px;
+    padding: 7.5px;
+    border: 0;
+    border-bottom: 1px solid #F89448;
+    outline: unset;
+    transition: .3s;
+}
 
-        & input {
-<<<<<<< HEAD
-            width: 300px;
-            padding: 7.5px;
-            border: 0;
-            border-bottom: 1px solid #0077b6;
-=======
-            font-size: 17px;
-            width: 300px;
-            padding: 7.5px;
-            border: 0;
-            border-bottom: 1px solid #F89448;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-            outline: unset;
-            transition: .3s;
-
-            &:focus {
-<<<<<<< HEAD
-                border-bottom: 1px solid #004b74;
-            }
-        }
-    }
-
-=======
-                border-bottom: 1px solid #ff6f00;
-            }
-        }
-    }
+.sign-up-box .box input:focus {
+    border-bottom: 1px solid #ff6f00;
 }
 
 .sign-in-link {
@@ -123,5 +92,4 @@ img {
     margin-top: 30px;
     font-size: 17px;
     font-weight: 500;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
 }

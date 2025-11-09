@@ -11,14 +11,6 @@ img {
     object-fit: cover;
 }
 
-<<<<<<< HEAD
-.sign-in-box {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-=======
 .all-container {
     width: 100vw;
     height: 100vh;
@@ -36,84 +28,54 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-
-    & .com-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-<<<<<<< HEAD
-        gap: 15px;
-=======
-        gap: 30px;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-
-
-        & button {
-            width: 200px;
-            border: 0;
-<<<<<<< HEAD
-            background-color: #0077b6;
-=======
-            background-color: #F89448;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-            color: white;
-            border-radius: 10px;
-            padding: 10px;
-            margin-top: 30px;
-            font-size: 17px;
-            font-weight: 500;
-        }
-    }
-
-    & .box {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-        & label {
-<<<<<<< HEAD
-            color: #212529;
-=======
-            color: #333;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-            font-size: 17px;
-        }
-
-        & input {
-            font-size: 17px;
-            width: 300px;
-<<<<<<< HEAD
-            padding: 5px;
-            border: 0;
-            border-bottom: 1px solid #0077b6;
-=======
-            padding: 7.5px;
-            border: 0;
-            border-bottom: 1px solid #F89448;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-            outline: unset;
-            transition: .3s;
-
-            &:focus {
-<<<<<<< HEAD
-                border-bottom: 1px solid #004b74;
-=======
-                border-bottom: 1px solid #ff6f00;
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-            }
-        }
-    }
-
-<<<<<<< HEAD
-=======
 }
+
+.sign-in-box .com-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sign-in-box button {
+    width: 200px;
+    border: 0;
+    background-color: #F89448;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.sign-in-box .box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sign-in-box .box label {
+    color: #333;
+    font-size: 17px;
+}
+
+.sign-in-box .box input {
+    font-size: 17px;
+    width: 300px;
+    padding: 7.5px;
+    border: 0;
+    border-bottom: 1px solid #F89448;
+    outline: unset;
+    transition: .3s;
+}
+
+.sign-in-box .box input:focus {
+    border-bottom: 1px solid #ff6f00;
+}
+
 .sign-up-link {
     margin-top: 15px;
     color: #a7a7a7;
-<<<<<<< HEAD
->>>>>>> 6837621 (프론트/백엔드 연결 완료 및 회원가입 페이지 구현)
-=======
     text-decoration: underline;
->>>>>>> a4a4247 (프론트/백 연결, 회원가입/로그인  페이지 구현, 인기순/최신순 구현, 전체 리액트 연결 구현)
 }
