@@ -1,0 +1,6 @@
+MONGO_URI=mongodb+srv://domfam60_db_user:cifviCGx9I3xW8wf@community-backend-clust.j7btksc.mongodb.net/communityDB?retryWrites=true&w=majority
+JWT_SECRET=supersecretkey
+PORT=5000
+CLOUDINARY_CLOUD_NAME=dvzomq7vg
+CLOUDINARY_API_KEY=976446484735946
+CLOUDINARY_API_SECRET=Ow3EASZQtRscwCJAgztNk2P0Jyk

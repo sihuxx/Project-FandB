@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+img {
+    object-fit: cover;
+}
+
+.all-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.sign-up-box {
+    padding: 145px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 3px 3px 3px #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-box .com-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sign-up-box .com-box button {
+    width: 200px;
+    border: 0;
+    background-color: #F89448;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.sign-up-box .box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sign-up-box .box label {
+    color: #333;
+    font-size: 17px;
+}
+
+.sign-up-box .box input {
+    font-size: 17px;
+    width: 300px;
+    padding: 7.5px;
+    border: 0;
+    border-bottom: 1px solid #F89448;
+    outline: unset;
+    transition: .3s;
+}
+
+.sign-up-box .box input:focus {
+    border-bottom: 1px solid #ff6f00;
+}
+
+.sign-in-link {
+    margin-top: 15px;
+    color: #a7a7a7;
+    text-decoration: underline;
+}
+
+.next-btn {
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    border: 0;
+    background-color: #F89448;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
