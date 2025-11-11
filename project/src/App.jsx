@@ -20,6 +20,7 @@ import MidMarket from './components/mid-component/MidMarket';
 import MarketPop from "./components/mid-component/mid-bottom-component/MarketPop";
 import MarketNew from "./components/mid-component/mid-bottom-component/MarketNew";
 import MidDM from './components/mid-component/MidDM';
+import ServiceCenterMain from "./components/mid-component/service-center-component/ServiceCenterMain";
 import '../fontawesome/css/font-awesome.css';
 <<<<<<< HEAD
 
