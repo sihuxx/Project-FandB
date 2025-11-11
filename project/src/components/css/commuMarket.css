@@ -11,6 +11,10 @@ img {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 .component-box {
     display: flex;
 }
@@ -25,9 +29,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     background-color: #ffffff;
     border-bottom: 1px solid #dfdfdf;
     color: #ffffff;
+=======
+    /* background-color: #ffffff; */
+    border-bottom: 1px solid #dfdfdf;
+    /* color: #ffffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     width: 100%;
     height: 80px;
     padding: 0 40px;
@@ -35,7 +45,11 @@ header {
     z-index: 1000;
 }
 
+<<<<<<< HEAD
 header .logo-box > img {
+=======
+header .logo-box>img {
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     width: 130px;
 }
 
@@ -54,7 +68,11 @@ header .search-box input {
     padding: 20px;
     font-size: 18px;
     color: #0a192f;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    /* background-color: #ffffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 }
 
 header .search-box input:focus {
@@ -85,7 +103,11 @@ header .sign-box a {
 }
 
 header .sign-box p {
+<<<<<<< HEAD
     color: #dfdfdf;
+=======
+/*     color: #dfdfdf; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 }
 
 [class*="box"] {
@@ -96,13 +118,20 @@ header .sign-box p {
 main {
     display: flex;
     justify-content: start;
+<<<<<<< HEAD
     background-color: #e0f7fa;
+=======
+    /* background-color: #e0f7fa; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 }
 
 .left-box {
     width: 300px;
     height: calc(100vh - 80px);
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     padding: 20px;
     z-index: 100;
     border-right: 1px solid #dfdfdf;
@@ -126,7 +155,11 @@ main {
     padding: 20px;
     justify-content: start;
     align-items: center;
+<<<<<<< HEAD
     color: #333;
+=======
+    /* color: #333; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 }
 
 .left-box a.left-select {
@@ -143,7 +176,11 @@ main {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #dfdfdf;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    /* background-color: #ffffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     position: sticky;
     top: 0;
     white-space: nowrap;
@@ -157,11 +194,18 @@ main {
     align-items: center;
     font-size: 20px;
     padding: 30px;
+<<<<<<< HEAD
     color: #333;
 }
 
 .mid-top a.mid-select {
     color: #03045e;
+=======
+/*     color: #333; */
+}
+
+.mid-top a.mid-select {
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     font-weight: bold;
     border-bottom: 4px solid #F89448;
 }
@@ -170,7 +214,11 @@ main {
     position: relative;
     width: calc(100vw - 300px - 400px);
     height: calc(100vh - 80px - 80px);
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    /* background-color: #ffffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,7 +236,11 @@ main {
 .mid-box .post {
     width: 100%;
     border-bottom: 1px solid #dfdfdf;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    /* background-color: #ffffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -200,7 +252,11 @@ main {
     gap: 15px;
 }
 
+<<<<<<< HEAD
 .mid-box .post .profile-box > img {
+=======
+.mid-box .post .profile-box>img {
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -218,6 +274,7 @@ main {
 }
 
 .mid-box .post .post-bottom .box h3 {
+<<<<<<< HEAD
     color: #333;
 }
 
@@ -228,6 +285,18 @@ main {
 .mid-box .post .post-bottom > p {
     font-size: 20px;
     color: #333;
+=======
+    /* color: #333; */
+}
+
+.mid-box .post .post-bottom .box p {
+    /* color: #5c6b73; */
+}
+
+.mid-box .post .post-bottom>p {
+    font-size: 20px;
+/*     color: #333; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 }
 
 .mid-box .post .post-bottom .post-picture {
@@ -243,7 +312,11 @@ main {
 }
 
 .mid-box .post .reaction-box i {
+<<<<<<< HEAD
     color: #333;
+=======
+/*     color: #333; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     font-size: 18px;
 }
 
@@ -256,7 +329,11 @@ main {
     gap: 15px;
 }
 
+<<<<<<< HEAD
 .mid-box .post .reaction-box .box-con > a {
+=======
+.mid-box .post .reaction-box .box-con>a {
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     display: flex;
     align-items: center;
     gap: 7.5px;
@@ -267,9 +344,19 @@ main {
     color: #fff;
     font-weight: 500;
     white-space: nowrap;
+<<<<<<< HEAD
 }
 
 .mid-box .post .reaction-box .box-con > a.like-it {
+=======
+
+    & p {
+        background-color: #F89448;
+    }
+}
+
+.mid-box .post .reaction-box .box-con>a.like-it {
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     background-color: #ff6f00;
     color: #ffffff;
 }
@@ -291,6 +378,10 @@ main {
 }
 
 .post-btn i {
+<<<<<<< HEAD
+=======
+    background-color: #F89448;
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     color: #ffffff;
 }
 
@@ -298,7 +389,11 @@ main {
     flex-direction: column;
     width: 400px;
     height: calc(100vh - 80px);
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    /* background-color: #ffffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     overflow-y: scroll;
     scrollbar-width: none;
     border-left: 1px solid #dfdfdf;
@@ -310,14 +405,22 @@ main {
     display: flex;
     padding: 15px;
     align-items: center;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    /* background-color: #ffffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     color: #03045e;
     font-weight: bold;
     position: sticky;
     top: 0;
 }
 
+<<<<<<< HEAD
 .right-box .right-top > p {
+=======
+.right-box .right-top>p {
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     font-size: 20px;
 }
 
@@ -342,7 +445,11 @@ main {
 
 .right-box .community-box .community h3 {
     font-size: 18px;
+<<<<<<< HEAD
     color: #333;
+=======
+  /*   color: #333; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 }
 
 .right-box .community-box .community .com-box {
@@ -351,13 +458,21 @@ main {
     gap: 7.5px;
 }
 
+<<<<<<< HEAD
 .right-box .community-box .community .com-box > .box {
+=======
+.right-box .community-box .community .com-box>.box {
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     align-items: center;
     gap: 7.5px;
 }
 
 .right-box .community-box .community .com-box p {
+<<<<<<< HEAD
     color: #5a5a5a;
+=======
+  /*   color: #5a5a5a; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     font-size: 15px;
 }
 
@@ -373,7 +488,11 @@ main {
     gap: 7.5px;
     padding: 30px;
     border-radius: 15px;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    /*     background-color: #fffff; */
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 }
 
 .pro-box .pro img {
@@ -400,4 +519,8 @@ main {
 .pro-box .pro .box p {
     color: #5a5a5a;
     font-size: 15px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
