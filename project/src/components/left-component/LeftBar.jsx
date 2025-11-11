@@ -26,10 +26,12 @@ export default function LeftBar() {
                         onClick={() => changeSelect("direct")}
                     >DM</Link>
                 </div>
-                <Link to="/setting"
-                    className={`setting-link ${selected === "setting" ? "left-select" : ""}`}
-                    onClick={() => changeSelect("setting")}
-                >설정</Link>
+                <div className="link-box">
+                    <Link to="/setting"
+                    >설정</Link>
+                    <Link to="/service-center"
+                    >고객센터</Link>
+                </div>
             </aside>
         </>
     )
