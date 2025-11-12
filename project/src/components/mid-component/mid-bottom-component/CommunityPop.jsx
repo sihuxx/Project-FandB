@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function CommunityPop() {
   const [backendMsg, setBackendMsg] = useState("");
@@ -13,9 +14,9 @@ export default function CommunityPop() {
   return (
     <>
       <section className="mid-box">
-        <div className="post-btn">
+        <Link to='/community-post' className="post-btn">
           <i className="fa fa-2x fa-edit"></i>
-        </div>
+        </Link>
         <article className="post-box">
           <div className="post">
             <div className="post-info-box">

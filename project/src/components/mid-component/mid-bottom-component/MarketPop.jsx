@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function MarketPop() {
     return (
         <>
             <section className="mid-box">
+                <Link to='/market-post' className="post-btn">
+                    <i className="fa fa-2x fa-edit"></i>
+                </Link>
                 <article className="pro-box">
                     <a href="#" className="pro">
                         <img src="https://phinf.pstatic.net/checkout.phinf/20230114_47/1673671204858sqx4z_JPEG/image.jpg?type=f300_300" alt="상품 이미지" className="pro-img" />

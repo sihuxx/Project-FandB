@@ -1,10 +1,6 @@
 // App.jsx
 import { BrowserRouter, Routes, Route, Navigate, Outlet, useLocation } from "react-router-dom";
-<<<<<<< HEAD
 import { useEffect, useState } from "react";
-=======
-import { useEffect, useState, createContext } from "react";
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 import Header from './components/Header';
 import LeftBar from './components/left-component/LeftBar';
 import LeftSettingBar from './components/left-component/LeftSettingBar';
@@ -15,21 +11,15 @@ import CommunityPop from './components/mid-component/mid-bottom-component/Commun
 import CommunityNew from './components/mid-component/mid-bottom-component/CommunityNew';
 import MidTopCommunity from './components/mid-component/MidTopCommunity';
 import MidTopMarket from './components/mid-component/MidTopMarket';
-import MidCommunity from './components/mid-component/MidCommunity';
-import MidMarket from './components/mid-component/MidMarket';
+import MidCommunity from './components/mid-component/mid-default-component/MidCommunity';
+import MidMarket from './components/mid-component/mid-default-component/MidMarket';
 import MarketPop from "./components/mid-component/mid-bottom-component/MarketPop";
 import MarketNew from "./components/mid-component/mid-bottom-component/MarketNew";
-import MidDM from './components/mid-component/MidDM';
-import ServiceCenterMain from "./components/mid-component/service-center-component/ServiceCenterMain";
+import MidDM from './components/mid-component/mid-default-component/MidDM';
+import Service from "./Service";
+import MidCommunityPost from "./components/mid-component/mid-post-component/MidCommunityPost";
+import MidMarketPost from "./components/mid-component/mid-post-component/MidMarketPost";
 import '../fontawesome/css/font-awesome.css';
-<<<<<<< HEAD
-
-=======
-import './theme.css' // ✅ 추가
-
-// ✅ 다크모드 Context 생성
-export const ThemeContext = createContext();
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 
 // ========================== Community Layout ==========================
 function CommunityLayout() {
@@ -71,10 +61,6 @@ function Community() {
   );
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 // ========================== Market Layout ==========================
 function MarketLayout() {
   return (
@@ -89,70 +75,53 @@ function Market() {
   return <MidMarket />;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 // ========================== Layout Wrapper ==========================
 function Layout() {
   const location = useLocation();
   const isSettingPage = location.pathname.startsWith('/setting');
+  const isServicePage = location.pathname.startsWith('/service-center')
   const isSignPage = location.pathname.startsWith('/sign');
 
   return (
     <div className='box'>
-      {!isSignPage && (isSettingPage ? <LeftSettingBar /> : <LeftBar />)}
+      {!isSignPage && !isServicePage && (isSettingPage ? <LeftSettingBar /> : <LeftBar />)}
 
       <Routes>
-<<<<<<< HEAD
         {/* Redirect root */}
         <Route path='/' element={<Navigate to="/community/popular" />} />
 
         {/* Community */}
-=======
-        <Route path='/' element={<Navigate to="/community/popular" />} />
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
         <Route path='/community' element={<CommunityLayout />}>
           <Route index element={<Navigate to="popular" />} />
           <Route path='popular' element={<CommunityPop />} />
           <Route path='new' element={<CommunityNew />} />
         </Route>
 
-<<<<<<< HEAD
         {/* Market */}
-=======
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
         <Route path='/market' element={<MarketLayout />}>
           <Route index element={<Navigate to="popular" />} />
           <Route path='popular' element={<MarketPop />} />
           <Route path='new' element={<MarketNew />} />
         </Route>
 
-<<<<<<< HEAD
         {/* Direct Message */}
         <Route path='/directMessage' element={<MidDM />} />
 
         {/* Setting & Sign */}
-=======
-        <Route path='/directMessage' element={<MidDM />} />
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
         <Route path='/setting/*' element={<Setting />} />
         <Route path='/sign/*' element={<Sign />} />
+        <Route path="/service-center" element={<Service/>}></Route>
+
+        <Route path="/community-post" element={<MidCommunityPost/>}></Route>
+        <Route path="/market-post" element={<MidMarketPost/>}></Route>
       </Routes>
 
-<<<<<<< HEAD
       {/* Right Sidebar */}
-=======
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
-      {!isSettingPage && !isSignPage && <RightCommunity />}
+      {!isSettingPage && !isSignPage && !isServicePage && <RightCommunity />}
     </div>
   );
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
 // ========================== App Content ==========================
 function AppContent() {
   const location = useLocation();
@@ -166,7 +135,6 @@ function AppContent() {
   );
 }
 
-<<<<<<< HEAD
 
 // ========================== Main App ==========================
 export default function App() {
@@ -174,24 +142,5 @@ export default function App() {
     <BrowserRouter>
       <AppContent />
     </BrowserRouter>
-=======
-// ========================== Main App ==========================
-export default function App() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
-
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <BrowserRouter>
-        <AppContent />
-      </BrowserRouter>
-    </ThemeContext.Provider>
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
   );
 }

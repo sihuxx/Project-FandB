@@ -19,20 +19,10 @@ export default function MidSignUp() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (e.target.checkValidity()) {
-<<<<<<< HEAD
-=======
-            localStorage.setItem("signup_name", formData.name);
-            localStorage.setItem("signup_email", formData.email);
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
             navigate("/sign/up02");
         }
     };
 
-<<<<<<< HEAD
-=======
-    
-
->>>>>>> 6132187 (백엔드/프론트 연동 및 다크모드 구현 및 고객센터 구현)
     return (
         <div className='all-container'>
             <div className="sign-up-box">

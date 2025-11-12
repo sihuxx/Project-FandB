@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function MarketNew() {
     return (
         <>
             <section className="mid-box">
+                <Link to='/market-post' className="post-btn">
+                    <i className="fa fa-2x fa-edit"></i>
+                </Link>
                 <article className="pro-box">
                     <a href="#" className="pro">
                         <img src="https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20220614/gv30000326615_1.jpg" alt="상품 이미지" className="pro-img" />
